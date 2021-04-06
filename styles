@@ -1,0 +1,177 @@
+/* GLOBAL / INITIALIZATION */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+
+}
+
+
+
+/* BUTTON STUFF */
+button {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(179, 179, 179);
+}
+
+.play-button {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.rules-button {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.rules {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    background-color: rgb(228, 159, 255);
+    text-align: center;
+}
+
+.reveal-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.easy {
+    position: absolute; 
+    top: 40%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+.medium {
+    position: absolute; 
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hard {
+    position: absolute; 
+    top: 40%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+}
+
+.back {
+    position: absolute; 
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* main menu */
+.title {
+    color: black;
+    font-size: 40px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(0, 183, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* board */
+.board {
+    position: absolute;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.board-colour1 {
+    background-color: #CEE5F2;
+}
+
+.board-colour2 {
+    background-color: #9ecfeb;
+}
+
+.details {
+    position: absolute;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(9, 200, 0);
+    font-size: 40px;
+    text-align: center;
+    width: 300px;
+    transform: translate(0, -50%);
+}
+
+.d1 {
+    left: 40%;
+}
+
+.d2 {
+    right: 40%;
+}
+
+/* board status */
+.not-visited {
+    cursor: pointer;
+}
+.not-visited:active {
+    color: red;
+}
+
+.visited-colour1 {
+    background-color: #abe0b3;
+}
+.visited-colour2 {
+    background-color: #8bdd97;
+}
+.is-bomb {
+    background-color: rgb(184, 110, 0);
+}
+
+/* WIN/LOSE SCREEN */
+.status {
+    position: absolute;
+    font-size: 75px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    background-color: orange;
+    border: 3px solid black;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+
+.reveal {
+    padding: 40px;
+    font-size: 30px;
+}
+.status:hover {
+    cursor: pointer;
+}
