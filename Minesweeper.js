@@ -12,7 +12,7 @@ var counter = 0;
 var squaresLeft;
 var done = false;
 mainMenu();
-// STILL NEED RULES
+
 
 
 /* ----- MAIN MENU STUFF ----- */
