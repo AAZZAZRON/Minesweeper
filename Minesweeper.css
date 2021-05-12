@@ -6,7 +6,8 @@
 
 body {
     background-image: url("./images/background.jpg");
-    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
 
 }
 
@@ -23,17 +24,18 @@ button {
 
 button:hover {
     cursor: pointer;
+    transition-duration: 0.5s;
     background-color: rgb(179, 179, 179);
 }
 
-.play-button {
+#play-button {
     position: absolute;
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
 }
 
-.rules-button {
+#rules-button {
     position: absolute;
     left: 50%;
     top: 60%;
@@ -48,32 +50,34 @@ button:hover {
     font-family:'Courier New', Courier, monospace;
     padding: 10px;
     margin: 10px;
+    width: 1200px;
     font-size: 25px;
     background-color: rgb(228, 159, 255);
     text-align: center;
 }
 
-.reveal-button {
+#reveal-button {
     position: absolute;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.easy {
+#easy {
     position: absolute; 
     top: 40%;
     left: 33%;
     transform: translate(-50%, -50%);
 }
 
-.medium {
+#medium {
     position: absolute; 
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.hard {
+#hard {
     position: absolute; 
     top: 40%;
     left: 67%;
@@ -98,13 +102,23 @@ button:hover {
 }
 
 /* board */
-.board {
+#TheBoard {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+.board {
     font-family:'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     width: 40px;
     height: 40px;
+    table-layout: fixed;
 }
 
 .board-colour1 {
@@ -115,22 +129,26 @@ button:hover {
     background-color: #9ecfeb;
 }
 
-.details {
-    position: absolute;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#flags {
+    position: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(9, 200, 0);
     font-size: 40px;
     text-align: center;
     width: 300px;
-    transform: translate(0, -50%);
+    margin: 30px;
+    right: 50%;
 }
 
-.d1 {
-    left: 40%;
-}
-
-.d2 {
-    right: 40%;
+#time {
+    position: fixed;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(9, 200, 0);
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;
+    width: 300px;
+    left: 50%;
 }
 
 /* board status */
@@ -152,7 +170,7 @@ button:hover {
 }
 
 /* WIN/LOSE SCREEN */
-.status {
+#status {
     position: absolute;
     font-size: 75px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -168,10 +186,26 @@ button:hover {
     text-align: center;
 }
 
-.reveal {
+#reveal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 40px;
     font-size: 30px;
 }
-.status:hover {
+#status:hover {
     cursor: pointer;
+    transition-duration: 0.5s;
+}
+#reveal:hover {
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#back-to-menu-button {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
 }

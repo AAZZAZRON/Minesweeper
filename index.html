@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minesweeper</title>
     <link rel="stylesheet" type="text/css" href="Minesweeper.css">
-</head>
-<body oncontextmenu="return false;">
-    <div class="title">Minesweeper</div>
     <script src="Minesweeper.js" type="text/javascript"></script>
+</head>
+<body id="TheBody" oncontextmenu="return false;">
+    <div class="title">Minesweeper</div>
+    <div id="MainMenu" hidden>
+        <button id="play-button">Click To Play</button>
+        <button id="rules-button">Rules</button>
+    </div>
+    <div id="Levels" hidden>
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+        <button class="back" onclick="mainMenu()">Back</button>
+    </div>
+    <div id="Rules" hidden>
+        <div class="rules">The basic idea to playing Minesweeper is that you attempt to find the bombs in a grid.<br><br>The grid is completely filled with unknown squares. Some contain empty space, and some contain bombs. Your goal is to reveal all the empty space without hitting a bomb.<br><br>To help you solve this puzzle, Numbers in squares next to unrevealed squares will indicate how many bombs are adjacent to it (corners included).<br><br>For example, if an empty square has a 2 in it, there are 2 bombs next to it.<br><br>To reveal a space you believe doesn't contain a bomb, click on that square with the LEFT mouse button.<br><br>To mark a space you believe contains a bomb, click using your RIGHT mouse button.<br><br>You win if you reveal all the empty spaces without clicking on a bomb.<br><br>Good luck!</div>
+        <button class="back" onclick="mainMenu()">Back</button>
+    </div>
+    <div id="NewGame" hidden>
+        <div id="time">0</div>
+        <div id="flags">0</div>
+        <table id="TheBoard"></table>
+        <button id="back-to-menu-button" hidden>Click to Return to Menu</button>
+        <button id="reveal-button" hidden>Click to Reveal Answer</button>
+        <div id="status" hidden></div>
+        <div id="reveal" hidden></div>
+    </div>
 </body>
 </html>
